@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DailyNote</string>
+    <string name="add_note">Add Note</string>
+    <string name="enter_the_title">Enter the title</string>
+    <string name="enter_the_content">Enter the content</string>
+    <string name="_08_10_1991_12_30_pm">08/10/1991::12:30 pm</string>
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+</resources>

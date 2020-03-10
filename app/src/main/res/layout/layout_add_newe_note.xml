@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <EditText
+        android:id="@+id/et_new_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dime_5dp"
+        android:layout_marginRight="@dimen/dime_5dp"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:hint="@string/enter_the_title"
+        android:inputType="textPersonName"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/et_new_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:maxLines="5"
+        android:layout_marginLeft="@dimen/dime_5dp"
+        android:layout_marginRight="@dimen/dime_5dp"
+        android:textStyle="italic"
+        android:hint="@string/enter_the_content"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/et_new_title"
+        app:layout_constraintTop_toBottomOf="@+id/et_new_title" />
+
+    <TextView
+        android:id="@+id/txt_timestamp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:textStyle="italic"
+        android:textSize="15sp"
+        android:layout_marginLeft="@dimen/dime_5dp"
+        android:layout_marginRight="@dimen/dime_5dp"
+        android:hint="@string/_08_10_1991_12_30_pm"
+        android:padding="12dp"
+        app:layout_constraintStart_toStartOf="@+id/et_new_content"
+        app:layout_constraintTop_toBottomOf="@+id/et_new_content" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:text="@string/add_note"
+android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="56dp"
+        android:text="@string/submit"
+        app:layout_constraintStart_toStartOf="@+id/txt_timestamp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_timestamp" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/cancel"
+        app:layout_constraintStart_toEndOf="@+id/submit"
+        app:layout_constraintTop_toBottomOf="@+id/txt_timestamp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
